@@ -1,0 +1,41 @@
+:root {
+  /* ── Monochrome Palette ── */
+  --z-bg:            #0d0d0d;
+  --z-bg-raised:     #141414;
+  --z-bg-hover:      #1a1a1a;
+  --z-border:        #222222;
+  --z-border-light:  #2a2a2a;
+
+  --z-text:          #c8c4bf;
+  --z-text-dim:      #7a756f;
+  --z-text-bright:   #e8e4df;
+  --z-text-ghost:    #3a3632;
+
+  --z-accent:        #8a8078;
+  --z-accent-hover:  #a89e94;
+  --z-mark:          #c8b8a0;
+
+  /* ── Typography ── */
+  --z-font-serif:    'Cormorant Garamond', 'Georgia', serif;
+  --z-font-body:     'Source Serif 4', 'Georgia', serif;
+  --z-font-mono:     'JetBrains Mono', 'Menlo', monospace;
+
+  --z-size-xs:       0.75rem;
+  --z-size-sm:       0.875rem;
+  --z-size-base:     1.0625rem;
+  --z-size-md:       1.25rem;
+  --z-size-lg:       1.75rem;
+  --z-size-xl:       2.5rem;
+  --z-size-hero:     3.5rem;
+
+  --z-leading-tight: 1.2;
+  --z-leading-body:  1.75;
+  --z-leading-loose: 2.0;
+
+  --z-measure:       38em;
+  --z-space:         0.5rem;
+
+  /* ── Grain & Vignette ── */
+  --z-grain-opacity: 0.035;
+  --z-vignette-spread: 40%;
+}

@@ -1,0 +1,212 @@
+/* ── Home: Hero artwork ── */
+.hero-art {
+  margin: 0 auto calc(var(--z-space) * 8);
+  max-width: 560px;
+}
+
+.hero-art img {
+  width: 100%;
+  border: 1px solid var(--z-border);
+  filter: grayscale(0.1) contrast(1.05);
+}
+
+.hero-art figcaption {
+  margin-top: calc(var(--z-space) * 1.5);
+  text-align: center;
+}
+
+/* ── Home: Title block ── */
+.site-title {
+  text-align: center;
+  font-size: var(--z-size-hero);
+  margin-bottom: calc(var(--z-space) * 2);
+}
+
+.site-mark {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--z-mark);
+  margin-bottom: calc(var(--z-space) * 2);
+}
+
+.covenant-line {
+  text-align: center;
+  font-family: var(--z-font-mono);
+  font-size: var(--z-size-xs);
+  color: var(--z-text-dim);
+  letter-spacing: 0.04em;
+  line-height: var(--z-leading-loose);
+}
+
+.stance {
+  text-align: center;
+  font-size: var(--z-size-md);
+  color: var(--z-text);
+  margin: calc(var(--z-space) * 6) 0;
+}
+
+/* ── Page descriptions ── */
+.page-desc {
+  color: var(--z-text-dim);
+  margin-bottom: calc(var(--z-space) * 6);
+}
+
+/* ── Post card (home latest) ── */
+.post-card {
+  background: var(--z-bg-raised);
+  border: 1px solid var(--z-border);
+  padding: calc(var(--z-space) * 4);
+  margin-top: calc(var(--z-space) * 4);
+}
+
+.post-card h3 {
+  font-size: var(--z-size-lg);
+  margin-bottom: calc(var(--z-space) * 2);
+}
+
+.post-card h3 a {
+  color: var(--z-text-bright);
+  border-bottom: none;
+}
+
+.post-card h3 a:hover { color: var(--z-accent-hover); }
+
+.post-excerpt {
+  color: var(--z-text);
+  margin-bottom: calc(var(--z-space) * 4);
+}
+
+/* ── Provenance footer (non-negotiable on every post) ── */
+.post-provenance {
+  margin-top: calc(var(--z-space) * 4);
+  padding-top: calc(var(--z-space) * 3);
+  border-top: 1px solid var(--z-border);
+  line-height: var(--z-leading-loose);
+  font-family: var(--z-font-mono);
+  font-size: var(--z-size-xs);
+  color: var(--z-text-dim);
+}
+
+.post-provenance a {
+  color: var(--z-text-dim);
+  border-bottom: 1px solid var(--z-border);
+}
+
+.post-provenance a:hover { color: var(--z-accent-hover); }
+
+/* ── Canon list ── */
+.canon-list {
+  padding: 0;
+}
+
+.canon-entry {
+  display: grid;
+  grid-template-columns: 7em 1fr auto;
+  gap: calc(var(--z-space) * 3);
+  align-items: baseline;
+  padding: calc(var(--z-space) * 2) 0;
+  border-bottom: 1px solid var(--z-border);
+}
+
+.canon-entry:hover { background: var(--z-bg-hover); }
+
+.canon-title {
+  font-family: var(--z-font-body);
+  font-size: var(--z-size-base);
+}
+
+.canon-tags {
+  font-size: var(--z-size-xs);
+  color: var(--z-text-ghost);
+}
+
+/* ── Tag index ── */
+.tag-group {
+  margin-bottom: calc(var(--z-space) * 6);
+}
+
+.tag-name {
+  font-family: var(--z-font-mono);
+  font-size: var(--z-size-sm);
+  color: var(--z-text-dim);
+  letter-spacing: 0.04em;
+  margin-bottom: calc(var(--z-space) * 2);
+  font-weight: 400;
+}
+
+.tag-posts li {
+  padding: calc(var(--z-space) * 1) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: calc(var(--z-space) * 2);
+}
+
+.tag-posts li + li { border-top: 1px solid var(--z-border); }
+
+/* ── Post body (full essay pages) ── */
+.post-header {
+  margin-bottom: calc(var(--z-space) * 8);
+}
+
+.post-header h1 {
+  margin-bottom: calc(var(--z-space) * 2);
+}
+
+.post-body p {
+  margin-bottom: calc(var(--z-space) * 3);
+}
+
+.post-body h2 {
+  font-size: var(--z-size-lg);
+  margin-top: calc(var(--z-space) * 8);
+  margin-bottom: calc(var(--z-space) * 3);
+}
+
+.post-body h3 {
+  font-size: var(--z-size-md);
+  margin-top: calc(var(--z-space) * 6);
+  margin-bottom: calc(var(--z-space) * 2);
+}
+
+.post-body ol, .post-body ul {
+  padding-left: calc(var(--z-space) * 4);
+  margin-bottom: calc(var(--z-space) * 3);
+}
+
+.post-body ol { list-style: decimal; }
+.post-body ul { list-style: disc; }
+
+.post-body li {
+  margin-bottom: calc(var(--z-space) * 1);
+}
+
+.post-body code {
+  background: var(--z-bg-raised);
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+/* ── About page ── */
+.about-section {
+  margin-bottom: calc(var(--z-space) * 8);
+}
+
+.about-section h2 {
+  font-size: var(--z-size-lg);
+  margin-bottom: calc(var(--z-space) * 3);
+}
+
+.covenant-block {
+  font-family: var(--z-font-mono);
+  font-size: var(--z-size-sm);
+  color: var(--z-text-dim);
+  line-height: var(--z-leading-loose);
+  padding: calc(var(--z-space) * 3);
+  border-left: 2px solid var(--z-mark);
+}
+
+.covenant-block .mark-highlight {
+  color: var(--z-mark);
+}

@@ -1,0 +1,38 @@
+@media (max-width: 600px) {
+  :root {
+    --z-size-hero: 2.25rem;
+    --z-size-xl:   1.75rem;
+  }
+
+  .page {
+    padding: calc(var(--z-space) * 10) calc(var(--z-space) * 2.5);
+  }
+
+  .site-nav {
+    padding: calc(var(--z-space) * 2);
+  }
+
+  .nav-links {
+    gap: calc(var(--z-space) * 2.5);
+  }
+
+  .canon-entry {
+    grid-template-columns: 1fr;
+    gap: calc(var(--z-space) * 0.5);
+  }
+
+  .canon-tags { display: none; }
+
+  .hero-art { max-width: 100%; }
+
+  .tag-posts li {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
