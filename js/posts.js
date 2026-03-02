@@ -19,4 +19,13 @@ window.POSTS = [
     excerpt: 'On epistemic feudalism and building agents that strengthen commons.',
     sources: []
   },
+  {
+    slug: 'the-garden-and-the-gom-jabbar',
+    title: 'The Quiet Uprising of Architects',
+    date: '2026-03-02',
+    tags: ['forge', 'governance', 'agents'],
+    canonical: 'https://thenullpath.substack.com/p/the-garden-and-the-gom-jabbar',
+    excerpt: 'On leverage, stillness, and the quiet architecture of liberation.',
+    sources: []
+  },
 ];
