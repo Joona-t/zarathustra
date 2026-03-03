@@ -7,11 +7,11 @@
   var byDateDesc = function (a, b) { return b.date.localeCompare(a.date); };
   var byDateAsc  = function (a, b) { return a.date.localeCompare(b.date); };
 
-  // ── Home: latest post card ──
+  // ── Home: all post cards (newest first) ──
   var latestEl = document.getElementById('latest');
   if (latestEl && posts.length > 0) {
-    var latest = posts.slice().sort(byDateDesc)[0];
-    latestEl.innerHTML = postCard(latest);
+    var sorted = posts.slice().sort(byDateDesc);
+    latestEl.innerHTML = sorted.map(postCard).join('');
   }
 
   // ── Canon: chronological list ──
