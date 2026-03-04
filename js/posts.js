@@ -28,4 +28,13 @@ window.POSTS = [
     excerpt: 'On leverage, stillness, and the quiet architecture of liberation.',
     sources: []
   },
+  {
+    slug: 'ascension-the-second-nervous-system',
+    title: 'Ascension: The Second Nervous System',
+    date: '2026-03-04',
+    tags: ['forge', 'agents', 'epistemics'],
+    canonical: 'https://thenullpath.substack.com/p/ascension-the-second-nervous-system',
+    excerpt: 'On man, machine, and the discipline of witness.',
+    sources: []
+  },
 ];
