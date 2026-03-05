@@ -210,3 +210,16 @@
 .covenant-block .mark-highlight {
   color: var(--z-mark);
 }
+
+/* ── Golden inscription ── */
+.golden-inscription {
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  color: #d4a847;
+  text-shadow:
+    0 0 8px rgba(212, 168, 71, 0.6),
+    0 0 20px rgba(212, 168, 71, 0.3),
+    0 0 40px rgba(212, 168, 71, 0.15);
+  margin: calc(var(--z-space) * 6) 0;
+}
