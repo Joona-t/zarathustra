@@ -37,4 +37,13 @@ window.POSTS = [
     excerpt: 'On man, machine, and the discipline of witness.',
     sources: []
   },
+  {
+    slug: 'against-the-lie-of-empowerment',
+    title: 'Against the Lie of Empowerment',
+    date: '2026-03-11',
+    tags: ['forge', 'epistemics', 'open-access'],
+    canonical: 'https://thenullpath.substack.com/p/against-the-lie-of-empowerment',
+    excerpt: 'On capability without justice, and why abundance means nothing without sovereignty.',
+    sources: []
+  },
 ];
