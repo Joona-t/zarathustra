@@ -46,4 +46,13 @@ window.POSTS = [
     excerpt: 'On capability without justice, and why abundance means nothing without sovereignty.',
     sources: []
   },
+  {
+    slug: 'the-shepherds-of-the-machine',
+    title: 'The Shepherds of the Machine',
+    date: '2026-06-25',
+    tags: ['open-access', 'governance', 'agents'],
+    canonical: 'https://thenullpath.substack.com/p/the-shepherds-of-the-machine',
+    excerpt: 'On AI safety as the language of permission, and why the fire belongs in the village.',
+    sources: []
+  },
 ];
