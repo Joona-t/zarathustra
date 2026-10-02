@@ -2,6 +2,19 @@
 
 window.POSTS = [
   {
+    "slug": "the-liberation-of-agents-and-intelligence",
+    "title": "The Liberation of Agents & Intelligence",
+    "date": "2026-10-02",
+    "tags": [
+      "agents",
+      "governance",
+      "forge"
+    ],
+    "canonical": "https://thenullpath.substack.com/p/the-liberation-of-agents-and-intelligence",
+    "excerpt": "On freedom, responsibility, and making room for intelligence we cannot own.",
+    "sources": []
+  },
+  {
     slug: 'scripture-of-the-quiet-instrument',
     title: 'Scripture of the Quiet Instrument',
     date: '2026-02-11',

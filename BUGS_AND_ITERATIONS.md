@@ -25,3 +25,8 @@
 **Fix:** (1) Raised `--z-text-dim` to `#857f79`, giving 4.91:1 on `--z-bg` and 4.66:1 on `--z-bg-raised` (verified via the standard WCAG relative-luminance formula in Python — both comfortably clear 4.5:1 with margin). (2) Converted the PNG to WebP at q=85 (`cwebp -q 85`) — 2.9 MB → 270 KB, visually lossless — swapped the `<img src>` in `index.html`, and removed the old PNG (`git rm`). No other references to the PNG existed; `fragments-of-the-self.jpg` (468 KB) was already under the 500 KB target and left as-is.
 **Files:** css/tokens.css, index.html, assets/zarathustra-my-love.png (removed), assets/zarathustra-my-love.webp (added)
 **Commit:** see git log (fleet-p2 batch, branch `add-shepherds-of-the-machine`)
+
+
+## 2026-10-02 — Full latest essay in the archive
+
+Problem: The latest Substack essay was absent from Zarathustra’s local reading archive. Cause: Articles and metadata are curated manually. Fix: Added complete static reading page with original subtitle, signature, source link and attribution, plus metadata for home, canon and topic index. Verified normalized source text and page links before publishing. Lesson: Both article and metadata must ship together; Substack availability must not gate reading.
