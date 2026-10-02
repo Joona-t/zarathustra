@@ -30,3 +30,5 @@
 ## 2026-10-02 — Full latest essay in the archive
 
 Problem: The latest Substack essay was absent from Zarathustra’s local reading archive. Cause: Articles and metadata are curated manually. Fix: Added complete static reading page with original subtitle, signature, source link and attribution, plus metadata for home, canon and topic index. Verified normalized source text and page links before publishing. Lesson: Both article and metadata must ship together; Substack availability must not gate reading.
+
+Publishing verification caught a cached post catalog in Chrome: version the catalog URL on home, canon and topics so visitors fetch the new essay list immediately.
