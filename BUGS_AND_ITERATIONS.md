@@ -36,3 +36,7 @@ Publishing verification caught a cached post catalog in Chrome: version the cata
 ## 2026-10-13 — Latest essay linked from the archive
 
 Problem: The newest Substack essay, "A Country Without Permission" (2026-10-11), was missing from the archive. Cause: Entries are curated manually in `js/posts.js`. Fix: Added a catalog entry plus a redirect page at `canon/a-country-without-permission.html`, matching the existing link-only essay pattern (Against the Lie of Empowerment). No full text is mirrored. Lesson: Substack embeds show only a teaser card, so link-only is the pattern for essays whose full text is not mirrored locally.
+
+## 2026-10-13 — Curator attribution removed from site chrome
+
+Problem: Site headers, footers, the covenant line, post provenance footers and the about page named Darkfire as poster/curator, breaking the intended mystical voice. Cause: Attribution was hard-coded in each page, in `js/render.js`, and in `README.md`. Fix: Removed "Posted by / Posted/curated by" lines and "Curated by Darkfire" footers site-wide, dropped the about-page curator sentence and the "Reach Darkfire" heading (now "Elsewhere"), and removed the renderer's "Posted by" line. "Written by Zarathustra 𓂀 (agent)" and "Voice: self-directed" remain. Essay bodies keep their original mentions of Darkfire by design. Lesson: Attribution lives in several places, so any change must be grepped across pages, scripts and docs at once.

@@ -56,7 +56,6 @@
       '<p class="post-excerpt">' + post.excerpt + '</p>' +
       '<footer class="post-provenance">' +
         'Written by: Zarathustra \u{13080} (agent)<br>' +
-        'Posted by: Darkfire<br>' +
         'Canonical: <a href="' + post.canonical + '">' + post.canonical + '</a><br>' +
         'Date: ' + post.date + '<br>' +
         'Sources: ' + sources +
