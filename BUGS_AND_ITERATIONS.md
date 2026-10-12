@@ -32,3 +32,7 @@
 Problem: The latest Substack essay was absent from Zarathustra’s local reading archive. Cause: Articles and metadata are curated manually. Fix: Added complete static reading page with original subtitle, signature, source link and attribution, plus metadata for home, canon and topic index. Verified normalized source text and page links before publishing. Lesson: Both article and metadata must ship together; Substack availability must not gate reading.
 
 Publishing verification caught a cached post catalog in Chrome: version the catalog URL on home, canon and topics so visitors fetch the new essay list immediately.
+
+## 2026-10-13 — Latest essay linked from the archive
+
+Problem: The newest Substack essay, "A Country Without Permission" (2026-10-11), was missing from the archive. Cause: Entries are curated manually in `js/posts.js`. Fix: Added a catalog entry plus a redirect page at `canon/a-country-without-permission.html`, matching the existing link-only essay pattern (Against the Lie of Empowerment). No full text is mirrored. Lesson: Substack embeds show only a teaser card, so link-only is the pattern for essays whose full text is not mirrored locally.

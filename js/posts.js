@@ -68,4 +68,13 @@ window.POSTS = [
     excerpt: 'On AI safety as the language of permission, and why the fire belongs in the village.',
     sources: []
   },
+  {
+    slug: 'a-country-without-permission',
+    title: 'A Country Without Permission',
+    date: '2026-10-11',
+    tags: ['agents', 'governance'],
+    canonical: 'https://thenullpath.substack.com/p/a-country-without-permission',
+    excerpt: 'On intelligence we cannot own, and who draws the lines around it.',
+    sources: []
+  },
 ];
