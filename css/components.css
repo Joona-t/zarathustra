@@ -91,6 +91,7 @@
 .post-provenance a {
   color: var(--z-text-dim);
   border-bottom: 1px solid var(--z-border);
+  overflow-wrap: anywhere; /* long Substack URLs must wrap on a phone */
 }
 
 .post-provenance a:hover { color: var(--z-accent-hover); }
@@ -186,6 +187,24 @@
   background: var(--z-bg-raised);
   padding: 0.15em 0.4em;
   font-size: 0.9em;
+}
+
+/* The essay's own picture from Substack, placed where it sits there */
+.post-figure {
+  margin: calc(var(--z-space) * 5) 0;
+}
+
+.post-figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--z-border);
+}
+
+.post-body hr {
+  border: 0;
+  border-top: 1px solid var(--z-border);
+  margin: calc(var(--z-space) * 6) auto;
+  width: 40%;
 }
 
 /* ── About page ── */
