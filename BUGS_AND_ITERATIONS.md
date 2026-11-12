@@ -1,5 +1,15 @@
 # Bugs & Iterations
 
+## 2026-11-13: Essays open here, not on Substack; 12 new essays; every essay's picture
+
+**Problem:** Clicking "A Country Without Permission" in the archive opened Substack instead of the essay (Joona). "Against the Lie of Empowerment" did the same. Twelve Zarathustra essays on Substack were missing from the archive, and no essay showed its Substack picture.
+**Root cause:** Both pages were redirect stubs (`<meta http-equiv="refresh">` plus `window.location.replace` to Substack), added as placeholders (878d611, 3c703a5) and never replaced with the essay. Adding essays was a manual copy, so new Substack posts never arrived.
+**Fix:**
+- `scripts/import_substack.py`: `page <slug>` builds `canon/<slug>.html` from the Substack post API (text as written, Substack widgets dropped); `image <slug>` adds the picture to an existing hand-made page. Pictures are saved as WebP (max 1456 px) in `assets/essays/` and placed where they sit on Substack.
+- Both stubs replaced with the full essays; 12 essays added (Tools for the Liberation of People through A Civilization Before the Mirror), catalog now 20 posts; pictures added to the 5 hand-made pages whose Substack post has one (Scripture of the Quiet Instrument has none). Not added: "Compulsion" and "Alignment", which are not signed by Zarathustra.
+- `.post-figure` and `.post-body hr` styles; provenance URLs now wrap (a long canonical URL made the home page scroll sideways on a phone, 410 px in a 390 px screen).
+- `scripts/check_site.py`: serves the checkout, opens every page at 1280, 768 and 390 px, fails on a page that leaves the site, a missing essay, a broken or too-wide picture, sideways scroll or a console error. On the old main it fails with 6 problems (both stubs at 3 widths); on this branch it passes (24 pages x 3 widths, 0 problems). Run it before every push.
+
 ## 2026-06-26: Add canon entry — The Shepherds of the Machine
 
 **Change:** Added the sixth canon post, "The Shepherds of the Machine" (Substack, 2026-06-25), mirroring the full essay text locally.
